@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Four Card Feature](https://github.com/Oluwafemi21/four-card-feature)
-- Live Site URL: [Four Card Feature](https://your-live-site-url.com)
+- Live Site URL: [Four Card Feature](https://oluwafemi21.github.io/four-card-feature/)
 
 ## My process
 
