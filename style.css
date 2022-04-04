@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic");
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-size: 15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-gray);
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+header h1{
+    font-weight: 200;
+}
+header h2{
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+header p{
+    font-weight: 400;
+    margin: 20px auto;
+    max-width: 500px;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 30px;
+}
+
+.card{
+    padding: 25px;
+    background-color: white;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+
+    box-shadow: 0 7px 18px -9px  var(--grayish-blue);
+}
+
+.inner-card{
+    display: flex;
+    flex-direction:column;
+    gap: 25px;
+}
+.card h4{
+    font-weight: 600;
+}
+
+.card p{
+    color: var(--grayish-blue);
+    font-size: 12px;
+}
+
+.card img{
+    width: 64px;
+    height: 64px;
+    margin-top: 20px;
+    align-self: flex-end;
+}
+
+.cyan{
+    border-top: 4px solid var(--cyan);
+}
+.red{
+    border-top: 4px solid var(--red);
+}.blue{
+    border-top: 4px solid var(--blue);
+}.orange{
+    border-top: 4px solid var(--orange);
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin: 15px 0;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:769px) {
+    .cards{
+        flex-direction: column;
+    }
+
+    header h1, header h2{
+        font-size: 25px;
+    }
+
+    header p{
+        font-size: 18px;
+    }
+}
